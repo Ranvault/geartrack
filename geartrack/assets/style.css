@@ -1,0 +1,176 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #263238;
+}
+
+.container {
+    width: min(1200px, 92%);
+    margin: 35px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    color: #183b32;
+}
+
+.header p {
+    margin: 0;
+    color: #687782;
+}
+
+.card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #245b49;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #194536;
+}
+
+.btn-danger {
+    background: #b93838;
+}
+
+.btn-danger:hover {
+    background: #922c2c;
+}
+
+.btn-secondary {
+    background: #e7ece9;
+    color: #26382f;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e8edeb;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #edf3ef;
+    color: #284b3c;
+    font-size: 13px;
+}
+
+tbody tr:hover {
+    background: #f7faf8;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+form .form-group {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd5d0;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+form input:focus,
+form select:focus {
+    outline: 2px solid #a8c9b8;
+    border-color: #245b49;
+}
+
+.alert {
+    padding: 13px 16px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: #e5f4e9;
+    color: #245b35;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+}
+
+.alert-error {
+    background: #fde8e7;
+    color: #a12622;
+}
+.status-tersedia,
+.status-habis {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-tersedia {
+    background: #e5f4e9;
+    color: #245b35;
+}
+
+.status-habis {
+    background: #fde8e7;
+    color: #a12622;
+}
